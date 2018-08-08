@@ -1,0 +1,43 @@
+<form>
+  <input type="hidden" name="id" id="id" [(ngModel)]="currentIntervention.id" />
+  <div class="form-group">
+  </div>
+  <div class="form-group">
+    <label>date_planification</label>
+    <input type="date" class="form-control" name="date_planification" id="date_planification" [(ngModel)]="currentIntervention.date_planification"
+    />
+  </div>
+  <div class="form-group">
+    <label>date_realisation</label>
+    <input type="date" class="form-control" name="date_realisation" id="date_realisation" [(ngModel)]="currentIntervention.date_realisation"
+    />
+  </div>
+
+  <div class="form-group">
+    <label>statut</label>
+    <input type="text" class="form-control" name="statut" id="statut" [(ngModel)]="currentIntervention.statut" />
+  </div>
+  <div class="form-group">
+    <label>commentaire</label>
+    <input type="text" class="form-control" name="commentaire" id="commentaire" [(ngModel)]="currentIntervention.commentaire"
+    />
+  </div>
+  <div class="form-group">
+    <label>id_intervenant</label>
+    <input type="number" class="form-control" name="id_intervenant" id="id_intervenant" [(ngModel)]="currentIntervention.id_intervenant"
+    />
+  </div>
+
+  <div class="form-group">
+    <label>id_materiel</label>
+    <input type="number" class="form-control" name="id_materiel" id="id_materiel" [(ngModel)]="currentIntervention.id_materiel"
+    />
+  </div>
+
+
+
+
+
+  <button class="btn btn-warning" (click)="cancelIntervention()">annuler</button>
+  <button class="btn btn-success" (click)="saveIntervention()">sauver</button>
+</form>
