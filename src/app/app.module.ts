@@ -8,6 +8,7 @@ import { InterventionListeComponent } from './components/intervention-liste/inte
 import { InterventionEditComponent } from './components/intervention-edit/intervention-edit.component';
 import { HomeComponent } from './components/home/home.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
+import { ArticleEditComponent } from './components/article-edit/article-edit.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ArticleListComponent } from './components/article-list/article-list.com
     InterventionListeComponent,
     InterventionEditComponent,
     HomeComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ArticleEditComponent
   ],
   imports: [
     BrowserModule,

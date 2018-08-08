@@ -31,7 +31,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="well">
+    <div *ngIf="interventionEditId" class="well">
       <app-intervention-edit [editId]="interventionEditId"></app-intervention-edit>
     </div>
   </div>
